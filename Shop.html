@@ -7,75 +7,126 @@
 <body>
 <!--Header-->
 <header class="main-header">
-  <a href="#">
-    <img class="main-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип проекта Нердс">
-  </a>
-  <ul class="main-menu">
-    <li><a href="Studio.html">Cтудия</a></li>
-    <li><a href="Customers.html">Клиенты</a></li>
-    <li><a href="Shop.html">Магазин</a></li>
-    <li><a href="Contact.html">Контакты</a></li>
-  </ul>
-  <!--basket form-->
-  <a class="basket" href="#">
-    <img class="mini-photo" src="img/cart-icon.svg" width="15" height="15" alt="мини картинка для корзины">Корзина
-  </a>
-  <!--finish the basket form-->
+  <nav class="navigation">
+    <a href="#">
+      <img class="main-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип проекта Нердс">
+    </a>
+    <ul class="main-menu">
+      <li><a href="Studio.html">Cтудия</a></li>
+      <li><a href="Customers.html">Клиенты</a></li>
+      <li><a href="Shop.html">Магазин</a></li>
+      <li><a href="Contact.html">Контакты</a></li>
+    </ul>
+    <!--basket form-->
+    <a class="basket" href="#">
+      <img class="mini-photo" src="img/cart-icon.svg" width="15" height="15" alt="мини картинка для корзины">Корзина
+    </a>
+    <!--finish the basket form-->
+    <h1 class="page-titel">Магазин готовых шаблонов</h1>
+  </nav>
 </header>
-  <!--Header[END]-->
+<!--Header[END]-->
 
-<!--Grid Section-->
-<h1 class="page-title">Магазин готовых шаблонов</h1>
-<p class="grid">Cетка:</p>
-<div class="grid-list">
-  <input type="radio" name="option" checked>Адаптивная<br>
-  <input type="radio" name="option" >Фиксированная<br>
-  <input type="radio" name="option" >Резинновая<br>
-</div>
-<!--Grid Section[END]-->
-
-<!--Features-List section-->
-<section class="features-list">
-<p class="features">Особенности</p>
-  <input type="checkbox" name="option1" checked>Слайдер<br>
-  <input type="checkbox" name="option2" >Блок преимуществ<br>
-  <input type="checkbox" name="option3" checked>Новости<br>
-  <input type="checkbox" name="option4" >Галлерея<br>
-  <input type="checkbox" name="option5" >Корзина<br>
-<button class="show" >Показать</button>
+<!--Filter-->
+<section class="filter">
+<h2 class="visually-hidden">Фильтр товаров</h2>
+  <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+    <fieldset>
+      <p class="grid">Cетка:</p>
+      <div class="grid-list">
+      <ul>
+        <li>
+          <input type="radio" name="option" id="adaptive">
+          <label for="adaptive">Адаптивная</label>
+        </li>
+        <li>
+          <input type="radio" name="option" id="Fixed">
+          <label for="Fixed">Фиксированная</label>
+        </li>
+        <li>
+          <input type="radio" name="option" id="Rubber">
+          <label for="Rubber">Резинновая</label>
+        </li>
+      </ul>
+      </div>
+    </fieldset>
+    <fieldset>
+      <p class="features">Особенности</p>
+      <ul>
+        <li>
+          <input type="checkbox" name="option1" id="Slider" checked>
+          <label for="Slider">Слайдер</label>
+        </li>
+        <li>
+          <input type="checkbox" name="option2" id="Advantage block">
+          <label for="Advantage block">Блок преимуществ</label>
+        </li>
+        <li>
+          <input type="checkbox" name="option3" id="News" checked>
+          <label for="News">Новости</label>
+        </li>
+        <li>
+          <input type="checkbox" name="option4" id="Gallery">
+          <label for="Gallery">Галлерея</label>
+        </li>
+        <li>
+          <input type="checkbox" name="option5" id="Basket">
+          <label for="Basket">Корзина</label>
+        </li>
+      </ul>
+    </fieldset>
+    <button class="filter-button" type="submit">Показать</button>
+  </form>
 </section>
-<!--Features-List section[END]-->
+<!--Filter[END]-->
 
 <!--Product-List section-->
 <ul class="product-list">
   <li>
-    <a href="#">
-      <img class="product-photo1" src="img/img-sedona.jpg" width="360" height="576" alt="Проект Седона">
+    <img class="product-photo1" src="img/img-sedona.jpg" width="360" height="576" alt="Проект Седона">
+      <div class="Sedona" method="get" action="https://echo.htmlacademy.ru">
+        <p class="Sedona-text">Sedona<br>Информационный сайт для туристов</p>
+        <button class="Sedona-button" type="submit">9 900 руб.</button>
+      </div>
+  </li>
+  <li>
+    <img class="product-photo2" src="img/img-pink.jpg" width="360" height="576" alt="Проект Пинк">
+      <div class="Pink" method="get" action="https://echo.htmlacademy.ru">
+        <p class="Pink-text">Pink<br>Продуктовый лендинг приложения для iOS и Android</p>
+        <button class="Pink-button" type="submit">9 900 руб.</button>
+      </div>
     </a>
   </li>
   <li>
-    <a href="#">
-      <img class="product-photo2" src="img/img-pink.jpg" width="360" height="576" alt="Проект Пинк">
+    <img class="product-photo3" src="img/img-barbershop.jpg" width="360" height="576" alt="Проект Бородинский">
+      <div class="Barbershop" method="get" action="https://echo.htmlacademy.ru">
+        <p class="Barbershop-text">Barbershop<br>Сайт салона красоты.Для мужчин, да.</p>
+        <button class="Barbershop-button" type="submit">9 900 руб.</button>
+      </div>
     </a>
   </li>
   <li>
-    <a href="#">
-      <img class="product-photo3" src="img/img-barbershop.jpg" width="360" height="576" alt="Проект Бородинский">
+    <img class="product-photo4" src="img/img-mishka.jpg" width="360" height="576" alt="Проект Мишка">
+      <div class="MISHKA" method="get" action="https://echo.htmlacademy.ru">
+        <p class="MISHKA-text">MISHKA<br>Интернет-магазин вязаных игрушек</p>
+        <button class="MISHKA-button" type="submit">9 900 руб.</button>
+      </div>
     </a>
   </li>
   <li>
-    <a href="#">
-      <img class="product-photo4" src="img/img-mishka.jpg" width="360" height="576" alt="Проект Мишка">
+    <img class="product-photo5" src="img/img-aplus.jpg" width="360" height="576" alt="Проект Обучение">
+      <div class="A Plus" method="get" action="https://echo.htmlacademy.ru">
+        <p class="A Plus-text">A Plus<br>Лендинг курсов повышения квалификации</p>
+        <button class="A Plus-button" type="submit">9 900 руб.</button>
+      </div>
     </a>
   </li>
   <li>
-    <a href="#">
-      <img class="product-photo5" src="img/img-aplus.jpg" width="360" height="576" alt="Проект Обучение">
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <img class="product-photo6" src="img/img-kvast.jpg" width="360" height="576" alt="Проект Квас">
+    <img class="product-photo6" src="img/img-kvast.jpg" width="360" height="576" alt="Проект Квас">
+      <div class="KVASS" method="get" action="https://echo.htmlacademy.ru">
+        <p class="KVASS-text">Квас<br>Промо-сайт производителя крафтового кваса</p>
+        <button class="KVASS-button" type="submit">9 900 руб.</button>
+      </div>
     </a>
   </li>
 </ul>
@@ -103,27 +154,29 @@
 
 <!--Footer-->
 <footer class="main-footer">
-<ul class="footer-menu">
-  <li>
-    <a class="social-button" href="#">
-      <img class="social-vk" src="img/vk-icon.svg" width="26" height="15" alt="Социальная сеть Вконтакте">Вконтакте
-    </a>
-  </li>
-  <li>
-    <a class="social-button" href="#">
-      <img class="social-fb" src="img/fb-icon.svg" width="12" height="22" alt="Социальная сеть Фейсбук">Фейсбук
-    </a>
-  </li>
-  <li>
-    <a class="social-button" href="#">
-      <img class="social-insta" src="img/insta-icon.svg" width="21" height="21" alt="Социальная сеть Инстаграм"> Инстаграм
-    </a>
-  </li>
-</ul>
-  <p class="footer-explanation">
-    <strong>Давайте дружить, это выгодно!</strong><br>
-    <b>Скидка 10% для друзей из социальных сетей.</b>
-  </p>
+  <div class="footer-section">
+    <ul class="footer-menu">
+      <li>
+        <a class="social-button" href="#">
+        <img class="social-vk" src="img/vk-icon.svg" width="26" height="15" alt="Социальная сеть Вконтакте">Вконтакте
+        </a>
+      </li>
+      <li>
+        <a class="social-button" href="#">
+        <img class="social-fb" src="img/fb-icon.svg" width="12" height="22" alt="Социальная сеть Фейсбук">Фейсбук
+        </a>
+      </li>
+      <li>
+        <a class="social-button" href="#">
+        <img class="social-insta" src="img/insta-icon.svg" width="21" height="21" alt="Социальная сеть Инстаграм"> Инстаграм
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer-section2">
+    <p>Давайте дружить, это выгодно!</p><br>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </div>
 </footer>
 <!--Footer[END]-->
 </body>
