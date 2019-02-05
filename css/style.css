@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+
+
+  background-color:#ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+}
+.navigation{
+background-color: grey back;
+font-size: 16px;
+line-height: 30px;
+}
+a{
+text-decoration: none;
+}
+.navigation{
+list-style: none;
+}
+
+.navigation a{
+text-transform: uppercase;
+font-weight: bold;
+color: #000000;
+}
+
+.navigation a:hover {
+  color: #fb565a;
+
+ }
+.navigation a:focus{
+color: #000000;
+text-decoration: underline #fb565a;
+}
+.services{
+background-color: white back;
+background-position: top center;
+background-repeat: no-repeat;
+}
+.services p{
+text-transform: uppercase;
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+}
+b{
+font-weight: normal;
+color: #283136;
+font-size: 16px;
+line-height: 24px;
+}
+button .button1{
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+
+}
+.button2{
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color:#00ca74
+  ;
+  border: none;
+}
+.button2:hover,
+.button2:focus {
+  background-color: #00bc6c;
+}
+.button2 :active{
+  color:rgba(255, 255, 255, 0.3);
+  background-color: #00aa62;
+}
+.button3{
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #efc84a;
+  border: none;
+
+}
+.button3:hover,
+.button3:focus {
+  background-color:#eab534;
+}
+.button3 :active{
+  color:rgba(255, 255, 255, 0.3);
+  background-color: #e5a722;
+}
+button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+button:hover,
+button:focus {
+  background-color: #e74246;
+}
+button :active{
+color:rgba(255, 255, 255, 0.3);
+background-color: #d7373b;
+}
+input:focus {
+border-color: #b4b9bb;
+ }
+input:focus {
+border-color: #000000;
+}
+input:active{
+
+border-color: #e74246;
+}
+p.footer-text{
+text-transform: uppercase;
+font-weight: bold;
+font-size: 36px;
+}
+
+
+
