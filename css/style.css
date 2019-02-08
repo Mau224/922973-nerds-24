@@ -5,49 +5,75 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
   color: #000000;
+}
+.main-header{
+  width:1440px;
+  margin:auto;
+  margin-bottom: 75px;
 
+background-color: gray;
+}
+.container{
+  margin: 0 auto;
+  padding: 0 10px;
 
-  background-color:#ffffff;
-  background-position: top center;
-  background-repeat: no-repeat;
 
 }
 .navigation{
-background-color: grey back;
-font-size: 16px;
-line-height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #eeeeee;
+  font-size: 16px;
+  line-height: 30px;
 }
-a{
-text-decoration: none;
+.main-logo{
+  margin-top: 49px;
+  margin-right: 202px;
+  margin-left: 140px;
+  margin-bottom: 16px;
 }
-.navigation{
-list-style: none;
+.basket{
+  padding-left: 286px;
+  padding-right: 140px;
 }
+.main-menu{
+  align-items: flex-start;
+  padding-left: 47px;
+}
+
+
 
 .navigation a{
-text-transform: uppercase;
-font-weight: bold;
-color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
 }
 
 .navigation a:hover {
   color: #fb565a;
-
- }
-.navigation a:focus{
-color: #000000;
-text-decoration: underline #fb565a;
 }
+.navigation a:focus{
+  color: #000000;
+  border-bottom: 2px solid #fb565a;
+  }
 .services{
-background-color: white back;
-background-position: top center;
-background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  margin-left: 140px;
+  margin-right: 200px;
+  list-style: none;
+  background-color: white;
+}
+.service-item{
+  margin-left: 100px;
+  width:300px;
 }
 .services p{
 text-transform: uppercase;
@@ -55,98 +81,110 @@ font-weight: bold;
 font-size: 24px;
 line-height: 30px;
 }
-b{
-font-weight: normal;
-color: #283136;
-font-size: 16px;
-line-height: 24px;
+b.product-text{
+  font-weight: normal;
 }
-button .button1{
+
+.btn{
   font: inherit;
 
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
-
   background-color: #fb565a;
   border: none;
-
 }
-.button2{
-  font: inherit;
+button.btn:hover,
+button.btn:focus {
+  background-color: #e74246;
+}
+button.btn:active{
+  color:rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
 
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-
+button.button2{
   background-color:#00ca74
   ;
   border: none;
 }
-.button2:hover,
-.button2:focus {
+button.button2:hover,
+button.button2:focus {
   background-color: #00bc6c;
 }
-.button2 :active{
+button.button2 :active{
   color:rgba(255, 255, 255, 0.3);
   background-color: #00aa62;
 }
-.button3{
-  font: inherit;
-
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-
+button.button3{
   background-color: #efc84a;
   border: none;
-
 }
-.button3:hover,
-.button3:focus {
+button.button3:hover,
+button.button3:focus {
   background-color:#eab534;
 }
-.button3 :active{
+button.button3 :active{
   color:rgba(255, 255, 255, 0.3);
   background-color: #e5a722;
 }
-button {
-  font: inherit;
+.btn.filter-button:hover,
+.btn.filter-button:focus {
+  background-color: #dfdfdf;
+}
+.btn.filter-button:active{
+  color:rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+}
+p.product-text{
+  font-weight: bold;
+}
 
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-
-  background-color: #fb565a;
-  border: none;
+input:focus{
+  border-color: #b4b9bb;
 }
-button:hover,
-button:focus {
-  background-color: #e74246;
-}
-button :active{
-color:rgba(255, 255, 255, 0.3);
-background-color: #d7373b;
-}
-input:focus {
-border-color: #b4b9bb;
- }
-input:focus {
-border-color: #000000;
+input:hover{
+  border-color: #000000;
 }
 input:active{
+  border-color: #e74246;
+}
 
-border-color: #e74246;
+.footer-section{
+  display: flex;
+
+  justify-content: center;
+  margin-left: 140px;
+  margin-right: 356px;
+}
+.footer-menu{
+  margin-right:139px;
+}
+.text-container{
+  flex-direction: row;
+  margin-bottom: 75px;
 }
 p.footer-text{
-text-transform: uppercase;
-font-weight: bold;
-font-size: 36px;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: bold;
+  margin-bottom: 12px;
 }
+b.discount{
+  font-weight: normal;
+}
+section.filter{
+  font-size: 16px;
+  line-height:20px;
+}
+.filter-button{
+  font-weight: bold;
+  color:black;
+  background-color:#eeeeee;
+  border: none;
+}
+
 
 
 
