@@ -15,8 +15,15 @@ body {
 .container {
   width: 1160px;
   margin: 0 auto;
+  padding: 0;
 }
 
+.container-header{
+  width: 1160px;
+  height: 355px;
+  margin: 0 auto;
+
+}
 .navigation,
 .main-menu{
   display: flex;
@@ -26,6 +33,19 @@ body {
   background-color: #eeeeee;
   font-size: 16px;
   line-height: 30px;
+}
+.main-headline{
+
+  margin-left: 359px;
+  margin-right: 359px;
+  height: 355px;
+  width:722px;
+  margin-top:86px;
+
+}
+.headline{
+  font-size: 55px;
+  line-height: 1;
 }
 
 .basket{
@@ -55,6 +75,7 @@ body {
 }
 
 .navigation a{
+  list-style: none;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -66,12 +87,13 @@ body {
 }
 .navigation a:focus{
   color: rgba(0, 0, 0, 0.3);
-
-  }
+}
 .shoper{
+  margin-bottom: 12px;
   color: #000000;
   border-bottom: 2px solid #fb565a;
 }
+
 .main-logo:active{
   opacity: 0.3;
 }
@@ -91,10 +113,10 @@ body {
   width:300px;
 }
 .services p{
-text-transform: uppercase;
-font-weight: bold;
-font-size: 24px;
-line-height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
 }
 b.product-text{
   font-weight: normal;
@@ -200,6 +222,39 @@ p.footer-text{
 b.discount{
   font-weight: normal;
 }
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.filter{
+  width:286px;
+  margin-right: 140px;
+}
+.catalog{
+
+  width: 763px;
+
+}
+.product-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+
+  list-style: none;
+}
+.product-item{
+  width: 360px;
+
+  margin-bottom: 33px;
+  margin-right: 40px;
+}
+.product-item:nth-child(2n) {
+  margin-right: 0;
+}
+
 section.filter{
   font-size: 16px;
   line-height:20px;
