@@ -33,7 +33,7 @@ body {
   margin-left: auto;
 }
 .mini-photo{
-  opacity: 0.3;
+
   padding-right: 27px;
   margin-left: auto;
 }
@@ -65,16 +65,10 @@ body {
   color: #fb565a;
 }
 .navigation a:focus{
-  color: rgba(0, 0, 0, 0.3);
-
-  }
-.shoper{
   color: #000000;
   border-bottom: 2px solid #fb565a;
-}
-.main-logo:active{
-  opacity: 0.3;
-}
+  }
+
 
 .services{
   display: flex;
