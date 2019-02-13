@@ -10,7 +10,7 @@
 <body>
 <!--Header-->
 <header class="main-header">
-  <div class="container-header">
+  <div class="container">
     <nav class="navigation">
       <a class="main-logo" href="#">
         <img class="logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип проекта Нердс">
@@ -37,24 +37,24 @@
 <!--Filter-->
 <div class="container">
   <div class="catalog-columns">
-    <section class="filter">
+    <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
               <p class="grid">Cетка:</p>
               <div class="grid-list">
               <ul>
-                  <li>
-                      <input type="radio" name="option" id="adaptive">
-                      <label for="adaptive">Адаптивная</label>
+                  <li class="filter-option">
+                      <input class="filter-input filter-input-checkbox" type="radio" name="option" value="adaptive" id="grid-adaptive" checked>
+                      <label for="grid-adaptive">Адаптивная</label>
                   </li>
-                  <li>
-                      <input type="radio" name="option" id="Fixed">
-                      <label for="Fixed">Фиксированная</label>
+                  <li class="filter-option">
+                      <input class="filter-input filter-input-checkbox" type="radio" name="option" value="Fixed" id="grid-Fixed">
+                      <label for="grid-Fixed">Фиксированная</label>
                   </li>
-                  <li>
-                      <input type="radio" name="option" id="Rubber">
-                      <label for="Rubber">Резинновая</label>
+                  <li class="filter-option">
+                      <input class="filter-input filter-input-checkbox" type="radio" name="option" value="Rubber" id="grid-Rubber">
+                      <label for="grid-Rubber">Резинновая</label>
                   </li>
               </ul>
               </div>
@@ -62,23 +62,23 @@
           <fieldset>
               <p class="features">Особенности</p>
               <ul>
-                  <li>
+                  <li class="filter-option-features">
                       <input type="checkbox" name="option1" id="Slider" checked>
                       <label for="Slider">Слайдер</label>
                   </li>
-                  <li>
+                  <li class="filter-option-features">
                       <input type="checkbox" name="option2" id="Advantage block">
                       <label for="Advantage block">Блок преимуществ</label>
                   </li>
-                  <li>
+                  <li class="filter-option-features">
                       <input type="checkbox" name="option3" id="News" checked>
                       <label for="News">Новости</label>
                   </li>
-                  <li>
+                  <li class="filter-option-features">
                       <input type="checkbox" name="option4" id="Gallery">
                       <label for="Gallery">Галлерея</label>
                   </li>
-                  <li>
+                  <li class="filter-option-features">
                       <input type="checkbox" name="option5" id="Basket">
                       <label for="Basket">Корзина</label>
                   </li>
@@ -168,28 +168,30 @@
 
 <!--Footer-->
 <footer class="main-footer">
-  <div class="footer-section">
-    <ul class="footer-menu">
-      <li>
-        <a class="social-button" href="#">
-        <img class="social-vk" src="img/vk-icon.svg" width="26" height="15" alt="Социальная сеть Вконтакте">Вконтакте
-        </a>
-      </li>
-      <li>
-        <a class="social-button" href="#">
-        <img class="social-fb" src="img/fb-icon.svg" width="12" height="22" alt="Социальная сеть Фейсбук">Фейсбук
-        </a>
-      </li>
-      <li>
-        <a class="social-button" href="#">
-        <img class="social-insta" src="img/insta-icon.svg" width="21" height="21" alt="Социальная сеть Инстаграм"> Инстаграм
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="footer-section">
-    <p class="footer-text">Давайте дружить, это выгодно!</p><br>
-    <b class="discount">Скидка 10% для друзей из социальных сетей.</b>
+  <div class="container">
+    <div class="footer-section">
+      <ul class="footer-menu">
+        <li class="social-item">
+          <a class="social-button" href="#">
+          <img class="social-vk" src="img/vk-icon.svg" width="26" height="15" alt="Социальная сеть Вконтакте">Вконтакте
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-button" href="#">
+          <img class="social-fb" src="img/fb-icon.svg" width="12" height="22" alt="Социальная сеть Фейсбук">Фейсбук
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-button" href="#">
+          <img class="social-insta" src="img/insta-icon.svg" width="21" height="21" alt="Социальная сеть Инстаграм"> Инстаграм
+          </a>
+        </li>
+      </ul>
+      <div class="text-container">
+        <p class="footer-text">Давайте дружить, это выгодно!</p>
+        <b class="discount">Скидка 10% для друзей из социальных сетей.</b>
+      </div>
+    </div>
   </div>
 </footer>
 <!--Footer[END]-->
