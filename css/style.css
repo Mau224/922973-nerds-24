@@ -10,7 +10,7 @@ body {
 .main-header {
   background: #eeeeee;
   padding-top: 50px;
-
+  margin-bottom:140px;
   text-align: center;
   padding-bottom: 116px;
 }
@@ -211,6 +211,71 @@ body {
   margin: 0;
   margin-bottom: 38px;
 }
+.divide {
+  width: 1160px;
+  height: 2px;
+}
+.pop-up{
+  position: fixed;
+  width: 960px;
+  height: 590px;
+  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+.inner-columns {
+  display: flex;
+
+
+  margin: 60px 0;
+
+  outline: 3px solid black;
+  outline-offset: 2px;
+}
+.inner-column-left,
+.inner-column-right {
+
+  outline: 3px solid red;
+  outline-offset: -2px;
+}
+.inner-column-left{
+  width:650px;
+}
+
+.inner-column-right{
+
+
+  width:360px;
+}
+.inner-column-left h3{
+  font-size: 45px;
+  line-height: 1;
+  width:650px;
+
+}
+
+.nerds-info{
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+
+
+.nerds-info::before{
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  background-color:  #fb565a;
+  position: relative;
+
+
+}
+.nerds-info::before{
+  margin-left: 2px;
+  /* Указываем в пикселях отступ линии от текста заголовка */
+  left: -14px
+
+}
+
 
 
 
@@ -237,9 +302,56 @@ body {
 b.product-text{
   font-weight: normal;
 }
+.product-info {
+  position: absolute;
+
+  left: 0;
+  text-align: center;
+  background: #ececec;
+  width: 100%;
+  height:230px;
+
+  }
+
+  .product-item:hover .product-info {
+  bottom: 0;
+  }
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    margin-bottom: 60px;
+}
+p.product-text{
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 20px;
+
+}
+.product-heder span{
+  font-size: 500px;
+}
+
+.product-item {
+  position: relative;
+  overflow: hidden;
+  height: 576px;
+	width: 360px;
+    margin-bottom: 33px;
+    /* margin-left смотрите по макету */
+   margin-right: 40px;
+    flex: 0 0 360px;
+}
+.product-item:nth-child(2n) {
+  margin-right: 0;
+}
+
 
 .btn{
-  display: block;
+
   font: inherit;
   width: 200px;
   height:50px;
@@ -314,9 +426,7 @@ button.button3 :active{
   background-color: #d5d5d5;
 }
 
-p.product-text{
-  font-weight: bold;
-}
+
 
 input:focus{
   border-color: #b4b9bb;
@@ -394,16 +504,16 @@ b.discount{
 
 .catalog-columns {
 	display: flex;
-  flex-wrap: wrap;
+
   justify-content: space-between;
 }
 .filter {
 
-  flex: 0 0 286px;
+  flex: 0 0 261px;
 
 }
 .filters{
-  display:flex;
+padding-right: 140px;
 }
 .grid-list{
   margin-top: auto;
@@ -454,42 +564,47 @@ b.discount{
   position: relative;
 
   display: block;
-
+  padding-left:35px;
   cursor: pointer;
   user-select: none;
 }
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -30px;
+  left:0;
   top: 0;
   opacity: 0.3;
-  width: 23px;
-  height: 23px;
-  opacity: 0.2;
+  width: 19px;
+  height: 19px;
+
   border-radius: 4px;
-  background-color: black;
-  background-image: url(../img/checkbox-on.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  border:2px solid black;
+
 }
 
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
   top: 0px;
-  left: -30px;
+  left: 0;
   width: 27px;
   height: 23px;
   opacity: 0.3;
-  background-image: url(../img/checkbox-on.svg);
+
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+.filter-input-checkbox + label:hover::after {
+  opacity:1;
+  }
+.filter-input-checkbox + label:hover::before {
+  opacity:1;
+  }
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  left: -30px;
+  left: 0;
   top: -1px;
   opacity: 0.3;
 
@@ -504,7 +619,7 @@ b.discount{
 
   position: absolute;
   top: 5px;
-  left: -24px;
+  left: 6px;
   opacity: 0.3;
   width: 8px;
   height: 8px;
@@ -512,60 +627,27 @@ b.discount{
   background-color: #000000;
   border-radius: 50%;
 }
-
-.filter-input-radio:checked:hover,
-.filter-input-radio:checked:focus{
-
-  position: relative;
-  left: -30px;
-  top: -1px;
-
-
-  width: 16px;
-  height: 16px;
-
-  border: 2px solid #000000;
-  border-radius: 50%;
-
+.filter-input-radio + label:hover::after {
+  opacity: 1;
 }
-.filter-input:disabled[type="radio"] + label {
-  color: red;
-
-  opacity: 0.5;
+.filter-input-radio + label:hover::before {
+  opacity: 1;
 }
+
+
+
 
 
 
 .catalog {
 	/* 1160px - 286px */
-  flex: 0 0 874px;
-  margin-top: 133px;
-  margin-left: 140px;
+  flex: 0 0 760px;
+  flex-wrap: wrap;
+
 
 }
 
-.product-list {
-    display: flex;
-     flex-wrap: wrap;
-    justify-content: center;
 
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    width: 100%;
-    margin-bottom: 60px;
-}
-
-.product-item {
-	width: 360px;
-    margin-bottom: 33px;
-    /* margin-left смотрите по макету */
-    margin-left: 40px;
-    flex: 0 0 360px;
-}
-.product-item:nth-child(2n) {
-  margin-right: 0;
-}
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
@@ -628,9 +710,7 @@ b.discount{
   color:rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
 }
-p.product-text{
-  font-weight: bold;
-}
+
 .range-filter {
   width: 260px;
   margin-top: 49px;
