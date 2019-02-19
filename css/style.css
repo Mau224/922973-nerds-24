@@ -229,6 +229,10 @@ body {
   margin-top: 76px;
   margin-bottom: 62px;
 }
+.line3{
+  margin-top:45px;
+  margin-bottom:80px;
+}
 .inner-columns {
   display: flex;
 
@@ -247,12 +251,26 @@ body {
 .inner-column-left{
   width:650px;
 }
+.product-logo {
 
+  display: inline-block;
+  padding: 0px 40px;
+  vertical-align: middle;
+  }
 
-.product-logo:hover,
-.product-logo:focus{
+.product-logo:not(:last-child) {
+
+  border-right: 1px solid #ececec;;
+  }
+.product-logo img{
+  opacity: 0.3;
+  }
+.product-logo img:hover,
+.product-logo img:focus{
   opacity: 1;
-}
+  }
+
+
 .inner-column-right{
   width:360px;
 }
@@ -286,8 +304,80 @@ body {
   left: -14px
 
 }
+.modal{
+  position: fixed;
+
+  color: #000000;
+
+  background-color: #f8f3f0;
+  background-image: url("img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+.pop-up{
+  top: 200px;
+  left: 50%;
+
+  width: 750px;
+  margin-left: -460px;
+  padding: 50px 80px;
+}
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  right: 2px;
+
+  width: 19px;
+  height: 3px;
+
+  background-color: red;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+.pop-upitem{
+  margin-bottom: 61px;
+}
+.pop-upmessadge input[type="text"]{
+  box-sizing: border-box;
+  width: 300px;
 
 
+  font: inherit;
+}
+.modal h3{
+  font-size: 45px;
+}
+.pop-upname{
+  margin-right: 50px;
+}
+.pop-upemail{
+  margin-top:180px;
+}
 
 
 .services{

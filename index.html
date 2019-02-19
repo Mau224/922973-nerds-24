@@ -120,43 +120,67 @@
 <!--section info[END]-->
 <!--section logo-->
 <section class="section logo">
-    <div class="container">
-      <div class="inner-logo">
-        <a class="product-logo" href="#">
-          <img src="img/logo-1.png" width ="200px" height="68" alt="текст">
-        </a>
-        <a class="product-logo" href="#">
-          <img src="img/logo-2.png" width ="200px" height="68" alt="текст">
-        </a>
-        <a class="product-logo" href="#">
-          <img src="img/logo-3.png" width ="200px" height="68" alt="текст">
-        </a>
-        <a class="product-logo" href="#">
-          <img  сlass="logs" src="img/logo-4.png" width ="200px" height="68" alt="текст">
-        </a>
-      </div>
+  <div class="container">
+    <div class="inner-logo">
+      <a class="product-logo" href="#">
+        <img src="img/logo-1-png-copy.png" width ="200px" height="68" alt="текст">
+      </a>
+      <a class="product-logo" href="#">
+        <img src="img/logo-2-png-copy.png" width ="200px" height="68" alt="текст">
+      </a>
+      <a class="product-logo" href="#">
+        <img src="img/logo-3-png-copy.png" width ="200px" height="68" alt="текст">
+      </a>
+      <a class="product-logo" href="#">
+        <img src="img/logo-4-png-copy.png" width ="200px" height="68" alt="текст">
+      </a>
+    </div>
     </div>
 </section>
+  <hr class="line3" text-align="center" width="90%" size="50" color="#dddddd" />
 <!--section Logo[END]-->
+<!--section map-->
+<section class="section map">
+  <div class="inner-map">
+    <a href="#">
+      <img src="img/map.jpg" width="100%" height="416">
+    </a>
+    <div class="modal modal-map">
+      <p>NЁRDS DESIGN STUDIO</p>
+      <address>191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+
+        тел. +7 (812) 275-75-75
+      </address>
+      <button class="btn write">Напишите нам</button>
+    </div>
+  </div>
+
+<!--section map[END]-->
 
 
 <!--pop-up-->
-<section class="pop-up">
-  <p>Напишите нам</p>
-  <form class="pop-up form" action="https://echo.htmlacademy.ru" method="post">
-  <p class="pop-up item">
-    <label for="pop-up name">Ваше имя:</label>
-    <input id="pop-up name" type="text" name="name" value="" placeholder="Cергей">
+<section class="modal pop-up">
+
+  <form class="form" id="main-form"action="https://echo.htmlacademy.ru" method="post">
+  <h3>Напишите нам</h3>
+  <p class="pop-upitem">
+    <label for="pop-upname">Ваше имя:</label>
+    <textarea id="pop-upname"form="main-form" cols="30px" rows="2"placeholder="Cергей">
+      </textarea>
   </p>
-  <p class="pop-up item">
-    <label for="pop-up email">Ваш e-mail:</label>
-    <input id="pop-up email" type="text" name="email" value="" placeholder="sergy123@mail.ru">
+  <p class="pop-upitem">
+    <label for="pop-upemail">Ваш e-mail:</label>
+    <textarea id="pop-upemail" form="main-form" cols="30px" rows="2" placeholder="sergy123@mail.ru">
+      </textarea>
   </p>
-  <p class="pop-up item">
-    <label for="pop-up messadge">Текст письма:</label>
-    <input id="pop-up messadge" type="text" name="messadge" value="" placeholder="Наберите текст...">
+  <p class="pop-upitem">
+    <label for="pop-upmessadge">Текст письма:</label>
+    <textarea id="pop-upmessadge" form="main-form" cols="90px" rows="5" placeholder="Наберите текст..." >
+    </textarea>
   </p>
   <button class="button-form btn" type="submit">ОТПРАВИТЬ</button>
+  <button class="modal-close" type="button">Закрыть</button>
   </form>
 </section>
 <!--pop-up[END]-->
