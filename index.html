@@ -6,6 +6,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="js/script.js"></script>
 </head>
 <body>
 <!--Header-->
@@ -98,20 +99,23 @@
         <h3>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара. </h3>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
               превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <p >Выполняем заказы на разработку:</p>
+          <p class="column-left-text"><strong>Выполняем заказы на разработку:</strong></p>
+        <div class="infocontainer2">
+              <p class="nerds-info">Веб-сайтов любой сложности</p><br>
 
-              <b class="nerds-info"><span>Веб-сайтов любой сложности<span></b><br>
+              <p class="nerds-info">Мобильных приложений для iOS и Android</p><br>
 
-              <b class="nerds-info">Мобильных приложений для iOS и Android</b><br>
-
-              <b class="nerds-info">Слайдшоу и видео для корпоративных презентаций</b>
+              <p class="nerds-info">Слайдшоу и видео для корпоративных презентаций</p>
+        </div>
       </div>
-      <div class="inner-column-left">
-          <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип">
-          <p clss="left-info">с 2004 года Любим точность во всем:</p>
-          <b>146%<br>Уровень<br>самоотдачи</b>
-          <b>100%<br>Соблюдение<br>сроков</b>
-          <b>50%<br>Минимальная<br>предоплата</b>
+      <div class="inner-column-right">
+          <img class="nerds-illustration" src="img/nerds-illustration.png" width="360" height="208" alt="Логотип">
+          <p class="right-info">с 2004 года Любим точность во всем:</p>
+          <div class="infocontainer">
+            <p class="right-info-column"><strong>146%</strong><br>Уровень<br>самоотдачи</p>
+            <p class="right-info-column"><strong>100%</strong><br>Соблюдение<br>сроков</p>
+            <p class="right-info-column"><strong>50%</strong><br>Минимальная<br>предоплата</p>
+          </div>
       </div>
     </div>
   </div>
@@ -135,7 +139,7 @@
         <img src="img/logo-4-png-copy.png" width ="200px" height="68" alt="текст">
       </a>
     </div>
-    </div>
+  </div>
 </section>
   <hr class="line3" text-align="center" width="90%" size="50" color="#dddddd" />
 <!--section Logo[END]-->
@@ -145,38 +149,41 @@
     <a href="#">
       <img src="img/map.jpg" width="100%" height="416">
     </a>
-    <div class="modal modal-map">
-      <p>NЁRDS DESIGN STUDIO</p>
-      <address>191186, Санкт-Петербург,<br>
+    <img class="marker" src="img/map-marker-png.png" width="231" height="190">
+    <div class="modal-map">
+      <p class="info-nerds-modal"><strong>NЁRDS DESIGN STUDIO</strong></p>
+      <address class="addr">191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8<br>
 
-        тел. +7 (812) 275-75-75
+        <p class="tel">тел. +7 (812) 275-75-75</p>
       </address>
-      <button class="btn write">Напишите нам</button>
+      <button class="write btn">Напишите нам</button>
     </div>
   </div>
+</section>
 
 <!--section map[END]-->
 
 
 <!--pop-up-->
 <section class="modal pop-up">
-
+    <h3>Напишите нам</h3>
   <form class="form" id="main-form"action="https://echo.htmlacademy.ru" method="post">
-  <h3>Напишите нам</h3>
+  <div class="mex">
   <p class="pop-upitem">
     <label for="pop-upname">Ваше имя:</label>
-    <textarea id="pop-upname"form="main-form" cols="30px" rows="2"placeholder="Cергей">
-      </textarea>
+    <input class="name" id="pop-upname" type="text" name="name" placeholder="  Имя Фамилия">
+
   </p>
   <p class="pop-upitem">
     <label for="pop-upemail">Ваш e-mail:</label>
-    <textarea id="pop-upemail" form="main-form" cols="30px" rows="2" placeholder="sergy123@mail.ru">
-      </textarea>
+    <input class="e-mail" id="pop-upemail" type="email" name="login" placeholder="  email@example.com">
+
   </p>
+  </div>
   <p class="pop-upitem">
     <label for="pop-upmessadge">Текст письма:</label>
-    <textarea id="pop-upmessadge" form="main-form" cols="90px" rows="5" placeholder="Наберите текст..." >
+    <textarea id="pop-upmessadge" form="main-form" cols="90px" rows="5" placeholder="В свободной форме" >
     </textarea>
   </p>
   <button class="button-form btn" type="submit">ОТПРАВИТЬ</button>
