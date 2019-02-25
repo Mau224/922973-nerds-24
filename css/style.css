@@ -10,9 +10,9 @@ body {
 .main-header {
   background: #eeeeee;
   padding-top: 50px;
-  margin-bottom:80px;
+
   text-align: center;
-  padding-bottom: 70px;
+
 }
 .container {
   width: 1160px;
@@ -24,7 +24,7 @@ body {
 .navigation,
 .main-menu{
   display: flex;
-  margin-bottom: 66px;
+
   align-items: center;
   justify-content: flex-start;
   background-color: #eeeeee;
@@ -94,29 +94,43 @@ body {
   clip: rect(0, 0, 0, 0);
 }
 
-
-
 .slider {
+  margin-bottom: 80px;
   position: relative;
-
-  background-color: #eeeeee;
+  width: 100%;
+  height: 413px;
+  background: #ececec;
 }
-
-.slider-controls {
+.slide {
   position: absolute;
-  left: 50%;
-  bottom: 104px;
-  z-index: 100;
+  width: 100%;
+  height: 100;
+  display: none;
+}
+.slider h3{
+  font-size: 55px;
+  line-height: 1;
+}
+.slide.active {
+  display: block;
+}
+.slide-photo{
+  top:10px;
+  left: 23%;
 
-  width: 160px;
-  height: 18px;
-
-  text-align: center;
-  font-size: 0;
-  transform: translateX(-50%);
+  position: absolute;
+}
+.slider-item-button{
+  top: 300px;
+  position: absolute;
+}
+.controls{
+  position: absolute;
+  left: 900px;
+  top: 300px;
 }
 
-.slider-controls i {
+.slide-control{
   position: relative;
 
   display: inline-block;
@@ -127,14 +141,13 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-
-.slider-controls i::after {
+.slide-control::after{
   content: "";
 
   position: absolute;
   top: 8px;
   left: 8px;
-  z-index: 1;
+  z-index: 80;
 
   width: 18px;
   height: 18px;
@@ -143,14 +156,13 @@ body {
 
   border-radius: 50%;
 }
-
-.slider-controls .active::before {
+.slide-control .acti::before{
   content: "";
 
   position: absolute;
-  left: 50%;
+  left: 17px;
   top: 50%;
-  z-index: 2;
+  z-index: 100;
 
   width: 4px;
   height: 4px;
@@ -161,56 +173,7 @@ body {
   border-radius: 50%;
 }
 
-.slider-list {
-  margin: 0;
-  padding: 0;
 
-  list-style: none;
-}
-
-.slider-item {
-  display: none;
-
-}
-
-.slider-item:nth-child(3) {
-  display: block;
-}
-
-.slider-item:nth-child(1) {
-  background-image: url("/img/slide-1.png");
-  background-repeat: no-repeat;
-  background-position: 93% 18px;
-}
-
-.slider-item:nth-child(2) {
-  background-image: url("/img/slide-2.png");
-  background-repeat: no-repeat;
-  background-position: 100% 0;
-}
-
-.slider-item:nth-child(3) {
-  background-image: url("/img/slide-3.png");
-  background-repeat: no-repeat;
-  background-position: 100% 20px;
-
-}
-
-.slider-item h3 {
-  max-width: 600px;
-  margin: 0;
-  margin-bottom: 27px;
-
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
-}
-
-.slider-item p {
-  max-width: 430px;
-  margin: 0;
-  margin-bottom: 38px;
-}
 .divide {
   width: 1160px;
   height: 2px;
@@ -902,9 +865,7 @@ b.discount{
 .sort a:focus{
   opacity:1;
 }
-.active{
-  opacity:1;
-}
+
 
 
 .pagination-list {
