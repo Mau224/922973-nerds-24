@@ -35,6 +35,10 @@ body {
 .headline{
   font-size: 55px;
   line-height: 1;
+  padding-bottom: 106px;
+  padding-top:30px;
+
+
 }
 
 .basket{
@@ -95,7 +99,7 @@ body {
 }
 
 .slider {
-  margin-bottom: 80px;
+  margin-bottom: 90px;
   position: relative;
   width: 100%;
   height: 413px;
@@ -108,8 +112,14 @@ body {
   display: none;
 }
 .slider h3{
+  margin-top: 70px;
   font-size: 55px;
   line-height: 1;
+  margin-bottom: auto;
+}
+.slider p{
+  margin-top:28px;
+
 }
 .slide.active {
   display: block;
@@ -120,9 +130,11 @@ body {
 
   position: absolute;
 }
-.slider-item-button{
-  top: 300px;
+.btn.slider-item-button{
+  width: 240px;
+  top: 292px;
   position: absolute;
+
 }
 .controls{
   position: absolute;
@@ -156,9 +168,9 @@ body {
 
   border-radius: 50%;
 }
-.slide-control .acti::before{
+.slide-control::before{
   content: "";
-
+  display: none;
   position: absolute;
   left: 17px;
   top: 50%;
@@ -168,7 +180,7 @@ body {
   height: 4px;
   margin: -4px;
 
-  background-color: inherit;
+
   border: 2px solid red;
   border-radius: 50%;
 }
@@ -279,17 +291,20 @@ text-align: center;
 }
 
 .product-header{
-  width: 360px;
+
+  width: 100%;
   height: 40px;
-  background-color: white;
-  opacity: 0,6;
+  background-color: grey;
+
 }
-.product-header-photo{
-  opacity: 0.12;
-}
-.product-item:hover .product-header-photo,
-.product-item:focus .product-header-photo{
-  opacity: 1;
+.dotes{
+  left:20px;
+  top:10px;
+  width:15px;
+  height:15px;
+  position: absolute;
+  border-radius:50%;
+  background-color: red;
 }
 
 .nerds-info::before{
@@ -373,8 +388,8 @@ text-align: center;
   top: 10px;
   right: 2px;
 
-  width: 19px;
-  height: 3px;
+  width: 30px;
+  height: 4px;
 
   background-color: red;
 }
@@ -395,6 +410,9 @@ text-align: center;
 
 
   font: inherit;
+}
+.pop-up-messadge{
+  padding:10px;
 }
 .modal h3{
   font-size: 45px;
@@ -422,30 +440,30 @@ text-align: center;
   background-color: white;
 
 }
-.addr{
 
-  padding-bottom: 20px;
-
-}
 .info-nerds-modal{
-  padding-top: 35px;
+
+  padding-top: 30px;
+  line-height: 1.67;
+  font-size: 18px;
+}
+.btn.write{
+  width:220px;
+
 }
 
-
-.tel{
-  padding-top:10px;
-}
 .marker{
   position: absolute;
   bottom:140px;
   right:560px;
 }
+
 .services{
   display: flex;
   flex-direction: row;
 
   justify-content: center;
-  margin-left: 140px;
+
   margin-right: 200px;
   list-style: none;
   background-color: white;
@@ -459,6 +477,8 @@ text-align: center;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+  margin-top: 20px;
+  margin-bottom: 18px;
 }
 b.product-text{
   font-weight: normal;
@@ -693,7 +713,7 @@ b.discount{
   font-weight: bold;
   line-height: 30px;
   margin-bottom: 27px;
-
+  text-transform: uppercase;
 }
 .filter fieldset {
   border: none;
@@ -744,6 +764,9 @@ b.discount{
   border-radius: 4px;
   border:2px solid black;
 
+}
+.filter-input-checkbox:checked + label::before {
+  opacity: 0;
 }
 
 .filter-input-checkbox:checked + label::after {
