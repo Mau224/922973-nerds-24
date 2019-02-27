@@ -23,7 +23,7 @@ for (var i = 0; i < controls.length; i++) {
   evt.preventDefault();
   var j = this.getAttribute('data-slide');
   changeSlide(slide[j])
-  swap.style.display='block';
+  this.classList.add('active')
 
 
 
@@ -33,6 +33,7 @@ for (var i = 0; i < controls.length; i++) {
   function changeSlide(elem) {
   for (var j = 0; j < slide.length; j++) {
   slide[j].classList.remove('active');
+  controls[j].classList.remove('active');
   }
   elem.classList.add('active');
 

@@ -154,7 +154,7 @@ body {
   cursor: pointer;
 }
 .slide-control::after{
-  content: "";
+  content:"";
 
   position: absolute;
   top: 8px;
@@ -169,7 +169,7 @@ body {
   border-radius: 50%;
 }
 .slide-control::before{
-  content: "";
+  content:"";
   display: none;
   position: absolute;
   left: 17px;
@@ -185,6 +185,9 @@ body {
   border-radius: 50%;
 }
 
+.slide-control.active::before{
+  display:block;
+}
 
 .divide {
   width: 1160px;
@@ -291,22 +294,28 @@ text-align: center;
 }
 
 .product-header{
-
+  border-radius: 5px 5px 0 0;
   width: 100%;
   height: 40px;
-  background-color: grey;
-
+  background-color: #4d4d4d;
+  opacity: 0.12;
+}
+.product-item:hover .product-header{
+  opacity: 1;
 }
 .dotes{
-  left:20px;
-  top:10px;
+
   width:15px;
   height:15px;
-  position: absolute;
+  margin-top:12px;
+  margin-right:8px;
+  display: inline-block;
   border-radius:50%;
-  background-color: red;
+  background-color: white;
 }
-
+.dotes:first-child{
+  margin-left:17px;
+}
 .nerds-info::before{
   content: "";
   display: inline-block;
@@ -486,7 +495,7 @@ b.product-text{
 .product-info {
   position: absolute;
 
-  left: 0;
+
   text-align: center;
   background: #ececec;
   width: 100%;
