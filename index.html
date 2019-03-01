@@ -13,7 +13,7 @@
 <header class="main-header">
   <div class="container">
     <nav class="navigation">
-      <a class="main-logo" href="nerds-index.html">
+      <a class="main-logo" href="index.html">
         <img class="logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип проекта Нердс">
       </a>
       <ul class="main-menu">
@@ -44,12 +44,12 @@
       <div class="slide">
         <h3>Любим математику<br> как никто другой</h3>
         <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
-        <img class="slide-photo" src="img/slide-2.png" width="698" height="413" alt="">
+        <img class="slide-photo" src="img/slide-2.png" width="698" height="403" alt="">
       </div>
       <div class="slide">
         <h3>Только ночь,<br> только хардкор</h3>
         <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-        <img class="slide-photo" src="img/slide-3.png" width="698" height="413" alt="">
+        <img class="slide-photo" src="img/slide-3.png" width="698" height="403" alt="">
       </div>
       <button class=" btn slider-item-button " href="#">Узнать больше</button>
     </div>
@@ -101,19 +101,20 @@
           <p class="column-left-text"><strong>Выполняем заказы на разработку:</strong></p>
         <div class="infocontainer2">
               <p class="nerds-info">Веб-сайтов любой сложности</p><br>
-
               <p class="nerds-info">Мобильных приложений для iOS и Android</p><br>
-
-              <p class="nerds-info">Слайдшоу и видео для корпоративных презентаций</p>
+            <p class="nerds-info">Слайдшоу и видео для корпоративных презентаций</p>
         </div>
       </div>
       <div class="inner-column-right">
           <img class="nerds-illustration" src="img/nerds-illustration.png" width="360" height="208" alt="Логотип">
           <p class="right-info">с 2004 года Любим точность во всем:</p>
           <div class="infocontainer">
-            <p class="right-info-column"><strong>146%</strong><br>Уровень<br>самоотдачи</p>
-            <p class="right-info-column"><strong>100%</strong><br>Соблюдение<br>сроков</p>
-            <p class="right-info-column"><strong>50%</strong><br>Минимальная<br>предоплата</p>
+            <p class="right-info-column"><strong>146</strong><b>%</b></p>
+            <span>Уровень<br>самоотдачи</span>
+            <p class="right-info-column"><strong>100</strong><b>%</b></p>
+            <span>Соблюдение<br>сроков</span>
+            <p class="right-info-column"><strong>50</strong><b>%</b></p>
+            <span>Минимальная<br>предоплата</span>
           </div>
       </div>
     </div>
@@ -132,7 +133,7 @@
         <img src="img/logo-2-png-copy.png" width ="200px" height="68" alt="текст">
       </a>
       <a class="product-logo" href="#">
-        <img src="img/logo-3-png-copy.png" width ="200px" height="68" alt="текст">
+        <img src="img/logo-3-png-copy.png" width ="200px" height="63" alt="текст">
       </a>
       <a class="product-logo" href="#">
         <img src="img/logo-4-png-copy.png" width ="200px" height="68" alt="текст">
@@ -146,7 +147,9 @@
 <section class="section map">
   <div class="inner-map">
     <a href="#">
-      <img src="img/map.jpg" width="100%" height="416">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1680.604198725929!2d30.322114579016308!3d59.93900380463333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1551382256254"
+      width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+
     </a>
     <img class="marker" src="img/map-marker-png.png" width="231" height="190">
     <div class="modal-map">
@@ -160,14 +163,13 @@
     </div>
   </div>
 </section>
-
 <!--section map[END]-->
 
 
 <!--pop-up-->
 <section class="modal pop-up">
     <h3>Напишите нам</h3>
-  <form class="form" id="main-form"action="https://echo.htmlacademy.ru" method="post">
+  <form class="form" id="main-form" action="https://echo.htmlacademy.ru" method="post">
   <div class="mex">
   <p class="pop-upitem">
     <label for="pop-upname">Ваше имя:</label>
@@ -183,6 +185,7 @@
   <p class="pop-upitem">
     <label for="pop-upmessadge">Текст письма:</label>
     <textarea class="pop-up-messadge" id="pop-upmessadge" form="main-form" cols="90px" rows="5" placeholder="В свободной форме" ></textarea>
+
   </p>
   <button class="button-form btn" type="submit">ОТПРАВИТЬ</button>
   <button class="modal-close" type="button">Закрыть</button>
