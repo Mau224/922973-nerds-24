@@ -100,8 +100,8 @@
                       <label for="Slider">Слайдер</label>
                   </li>
                   <li class="filter-option">
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="option2" id="Advantage block">
-                      <label for="Advantage block">Блок преимуществ</label>
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="option2" id="Advantage-block">
+                      <label for="Advantage-block">Блок преимуществ</label>
                   </li>
                   <li class="filter-option">
                       <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="option3" id="News" checked>
@@ -130,8 +130,8 @@
         <a class="sort-item act" href="#">По цене</a>
         <a class="sort-item" href="#">По типу</a>
         <a class="sort-item" href="#">По названию</a>
-        <a class="down" href="#"?sort="ASC"></a>
-        <a class="up" href="#"?sort="ASC"></a>
+        <a class="down" href="?sort=ASC"></a>
+        <a class="up" href="?sort=ASC"></a>
       </div>
       <ul class="product-list">
         <li class="product-item">
@@ -218,8 +218,8 @@
         <li class="pagination-item pagination-item-current"><a>1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
-        <button class="last btn">Следующая</button>
       </ul>
+      <button class="last btn">Следующая</button>
     </section>
   </div>
 </div>
@@ -227,7 +227,7 @@
 <!--pop-up-->
 <section class="modal pop-up">
     <h3>Напишите нам</h3>
-  <form class="form" id="main-form"action="https://echo.htmlacademy.ru" method="post">
+  <form class="form" id="main-form" action="https://echo.htmlacademy.ru" method="post">
   <div class="mex">
   <p class="pop-upitem">
     <label for="pop-upname">Ваше имя:</label>
@@ -242,7 +242,7 @@
   </div>
   <p class="pop-upitem">
     <label for="pop-upmessadge">Текст письма:</label>
-    <textarea class="pop-up-messadge" id="pop-upmessadge" form="main-form" cols="90px" rows="5" placeholder="В свободной форме" ></textarea>
+    <textarea class="pop-up-messadge" id="pop-upmessadge" form="main-form" cols="90" rows="5" placeholder="В свободной форме" ></textarea>
   </p>
   <button class="button-form btn" type="submit">ОТПРАВИТЬ</button>
   <button class="modal-close" type="button">Закрыть</button>
@@ -254,11 +254,11 @@
 <section class="section map">
   <div class="inner-map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1680.604198725929!2d30.322114579016308!3d59.93900380463333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1551382256254"
-      width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+      width="2000" height="416" style="border:0" allowfullscreen></iframe>
     <a href="#">
-      <img class="maps" src="img/map.jpg" width="100%" height="416">
+      <img class="maps" src="img/map.jpg" width="2000" height="416" alt="">
     </a>
-    <img class="marker" src="img/map-marker-png.png" width="231" height="190">
+    <img class="marker" src="img/map-marker-png.png" width="231" height="190" alt="">
     <div class="modal-map">
       <p class="info-nerds-modal"><strong>NЁRDS DESIGN STUDIO</strong></p>
       <address class="addr">191186, Санкт-Петербург,<br>
@@ -274,57 +274,57 @@
 
 <!--Footer-->
 <footer class="main-footer">
-  <div class="container">
-    <div class="footer-section">
-      <ul class="footer-menu">
-        <li class="social-item">
-          <a class="social-button" href="#">
-            <span class="visually-hidden">Вконтакте</span>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
-              <path fill="#ffffff" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
-                c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
-                c1.597-2.153,2.236-3.468,2.036-4.028c-0.192-0.539-1.365-0.399-1.365-0.399L20.69,0.713c-0.381,0.001-0.704,0.119-0.851,0.515
-                c-0.003,0.004-0.621,1.666-1.445,3.079c-1.741,2.989-2.436,3.148-2.724,2.961c-0.661-0.433-0.494-1.737-0.494-2.664
-                c0-2.897,0.432-4.105-0.846-4.417c-0.427-0.104-0.739-0.172-1.828-0.182c-1.392-0.021-2.574,0-3.244,0.329
-                c-0.445,0.223-0.786,0.712-0.579,0.74c0.26,0.035,0.843,0.16,1.155,0.586c0.401,0.552,0.389,1.789,0.389,1.789
-                s0.229,3.411-0.54,3.834c-0.528,0.29-1.25-0.302-2.803-3.016C6.087,2.879,5.488,1.345,5.488,1.345S5.372,1.06,5.162,0.904
-                C4.912,0.719,4.562,0.66,4.562,0.66L0.848,0.684c0,0-0.558,0.016-0.763,0.262C-0.097,1.164,0.07,1.614,0.07,1.614
-                s2.909,6.881,6.203,10.347c3.02,3.182,6.452,2.971,6.452,2.971h1.555c0,0,0.469-0.054,0.709-0.312
-                c0.224-0.24,0.214-0.691,0.214-0.691S15.172,11.82,16.138,11.51z">
+    <div class="container">
+      <div class="footer-section">
+        <ul class="footer-menu">
+          <li class="social-item">
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
+                <path fill="#fff" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
+                  c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
+                  c1.597-2.153,2.236-3.468,2.036-4.028c-0.192-0.539-1.365-0.399-1.365-0.399L20.69,0.713c-0.381,0.001-0.704,0.119-0.851,0.515
+                  c-0.003,0.004-0.621,1.666-1.445,3.079c-1.741,2.989-2.436,3.148-2.724,2.961c-0.661-0.433-0.494-1.737-0.494-2.664
+                  c0-2.897,0.432-4.105-0.846-4.417c-0.427-0.104-0.739-0.172-1.828-0.182c-1.392-0.021-2.574,0-3.244,0.329
+                  c-0.445,0.223-0.786,0.712-0.579,0.74c0.26,0.035,0.843,0.16,1.155,0.586c0.401,0.552,0.389,1.789,0.389,1.789
+                  s0.229,3.411-0.54,3.834c-0.528,0.29-1.25-0.302-2.803-3.016C6.087,2.879,5.488,1.345,5.488,1.345S5.372,1.06,5.162,0.904
+                  C4.912,0.719,4.562,0.66,4.562,0.66L0.848,0.684c0,0-0.558,0.016-0.763,0.262C-0.097,1.164,0.07,1.614,0.07,1.614
+                  s2.909,6.881,6.203,10.347c3.02,3.182,6.452,2.971,6.452,2.971h1.555c0,0,0.469-0.054,0.709-0.312
+                  c0.224-0.24,0.214-0.691,0.214-0.691S15.172,11.82,16.138,11.51z"></path>
+              </svg>
+             </a>
+          </li>
+          <li class="social-item">
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
+                <path fill="#fff" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-button" href="#">
+            <span class="visually-hidden"> Инстаграм</span>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+            <path fill="#fff" d="M18,0H3C1.35,0,0,1.35,0,3v15c0,1.65,1.35,3,3,3h15c1.65,0,3-1.35,3-3V3C21,1.35,19.65,0,18,0z M10.5,7
+              c1.93,0,3.5,1.57,3.5,3.5S12.43,14,10.5,14S7,12.43,7,10.5S8.57,7,10.5,7z M18,18H3V9h1.181C4.067,9.482,4,9.983,4,10.5
+              c0,3.59,2.91,6.5,6.5,6.5s6.5-2.91,6.5-6.5c0-0.517-0.066-1.018-0.181-1.5H18V18z M18,7h-4V3h4V7z"/>
             </svg>
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="social-button" href="#">
-            <span class="visually-hidden">Фейсбук</span>
-            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
-              <path fill="#ffffff" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"fill="#000000"/>
-            </svg>
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="social-button" href="#">
-          <span class="visually-hidden"> Инстаграм</span>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
-          <path fill="#FFFFFF" d="M18,0H3C1.35,0,0,1.35,0,3v15c0,1.65,1.35,3,3,3h15c1.65,0,3-1.35,3-3V3C21,1.35,19.65,0,18,0z M10.5,7
-            c1.93,0,3.5,1.57,3.5,3.5S12.43,14,10.5,14S7,12.43,7,10.5S8.57,7,10.5,7z M18,18H3V9h1.181C4.067,9.482,4,9.983,4,10.5
-            c0,3.59,2.91,6.5,6.5,6.5s6.5-2.91,6.5-6.5c0-0.517-0.066-1.018-0.181-1.5H18V18z M18,7h-4V3h4V7z"/>
-          </svg>
 
-          </a>
-        </li>
-      </ul>
-      <div class="text-container">
-        <p class="footer-text">Давайте дружить, это выгодно!</p>
-        <b class="discount">Скидка 10% для друзей из социальных сетей.</b>
+            </a>
+          </li>
+        </ul>
+        <div class="text-container">
+          <p class="footer-text">Давайте дружить, это выгодно!</p>
+          <b class="discount">Скидка 10% для друзей из социальных сетей.</b>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-<!--Footer[END]-->
+  </footer>
+  <!--Footer[END]-->
 <script src="js/script.js"></script>
 </body>
 </html>

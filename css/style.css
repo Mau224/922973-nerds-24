@@ -197,14 +197,26 @@ body {
 }
 
 .line1{
+  text-align: center;
+  width:90%;
+  size:50;
+  color:#dddddd;
   margin-top: 75px;
   margin-bottom: 40px;
 }
 .line2{
+  text-align: center;
+  width:90%;
+  size:50;
+  color:#dddddd;
   margin-top: 65px;
   margin-bottom: 62px;
 }
 .line3{
+  text-align: center;
+  width:90%;
+  size:50;
+  color:#dddddd;
   margin-top:45px;
   margin-bottom:80px;
 }
@@ -1026,6 +1038,9 @@ b.discount{
   background-color: #ffffff;
 }
 .btn.last{
+  position: relative;
+  top:-107px;
+  right:-175px;
   width:260px;
   font-weight: bold;
   color:black;
