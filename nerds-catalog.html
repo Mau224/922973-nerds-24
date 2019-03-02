@@ -39,38 +39,40 @@
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filter__field-set filter__field-set_range">
-            <div class="filter-range">
-              <div class="filter-range__container_slider">
-                <table class="range-slider">
-                  <tbody><tr>
-                    <td class="range-slider__td range-slider__td_left">
-                      <div class="range-slider__div-wrap">
-                        <div class="range-slider__thumb range-slider__thumb_left"></div>
-                      </div>
-                    </td>
-                    <td class="range-slider__td range-slider__td_center"></td>
-                    <td class="range-slider__td range-slider__td_right">
-                      <div class="range-slider__div-wrap">
-                        <div class="range-slider__thumb range-slider__thumb_right"></div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody></table>
-              </div>
-              <span class="hard-text1">OT</span>
-              <div class="filter-range__container_value">
-                <label class="filter-range__label">
-                  <input class="filter-range__value filter-range__value_min" type="text" name="value_min" value="0" data-min_value="0">
-                </label>
-              </div>
-              <span class="hard-text2">ДО</span>
-              <div class="filter-range__container_value">
-                <label class="filter-range__label">
-                  <input class="filter-range__value filter-range__value_max" type="text" name="value_max" value="15000" data-max_value="15000">
-                </label>
-              </div>
+          <div class="filter-range">
+            <div class="filter-range__container_slider">
+              <table class="range-slider">
+                <tbody><tr>
+
+                  <td class="range-slider__td range-slider__td_left" style="width: 66px;">
+                    <div class="range-slider__img-wrap">
+                      <img class="range-slider__thumb range-slider__thumb_left" src="img/filter-button.svg" alt="левая кнопка" width="20" height="23">
+                    </div>
+                  </td>
+
+                  <td class="range-slider__td range-slider__td_center"></td>
+                  <td class="range-slider__td range-slider__td_right" style="width: 1238px;">
+                    <div class="range-slider__img-wrap">
+                      <img class="range-slider__thumb range-slider__thumb_right" src="img/filter-button.svg" alt="правая кнопка" width="20" height="23">
+                    </div>
+                  </td>
+                </tr>
+              </tbody></table>
             </div>
-          </fieldset>
+            <span class="hard-text">ОТ</span>
+            <div class="filter-range__container_value">
+              <label class="filter-range__label">
+                <input class="filter-range__value filter-range__value_min" type="text" name="value_min" value="0" data-min_value="0">
+              </label>
+            </div>
+            <span сlass="hard-text2">ДО</span>
+            <div class="filter-range__container_value">
+              <label class="filter-range__label">
+                <input class="filter-range__value filter-range__value_max" type="text" name="value_max" value="30000" data-max_value="35000">
+              </label>
+            </div>
+          </div>
+        </fieldset>
           <fieldset>
               <p class="grid">Cетка:</p>
               <div class="grid-list">
