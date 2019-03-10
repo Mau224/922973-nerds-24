@@ -3,10 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
+  <link href="css/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <!--Header-->
@@ -19,7 +18,7 @@
       <ul class="main-menu">
         <li><a href="Studio.html">Cтудия</a></li>
         <li><a href="Customers.html">Клиенты</a></li>
-        <li><a href="nerds-catalog.html">Магазин</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
         <li><a href="Contact.html">Контакты</a></li>
       </ul>
       <!--basket form-->
@@ -28,10 +27,7 @@
       </a>
       <!--finish the basket form-->
     </nav>
-  </div>
-</header>
-<!--Header[END]-->
-<!--slider-->
+    <!--slider-->
 <section class="slider">
   <div class="container">
     <h2 class="visually-hidden">Преимущества</h2>
@@ -60,29 +56,33 @@
     </div>
   </div>
 </section>
-<!--dlider[END]-->
+<!--slider[END]-->
+  </div>
+</header>
+<!--Header[END]-->
+
 <!--Main section-->
 <section class="main-section">
   <div class="container">
     <ul class="services">
       <li class="service-item">
-        <img class="web sites" src="img/product-1.jpg" width="300" height="146" alt="Фото каталога веб-сайтов">
+        <img class="web-sites" src="img/product-1.jpg" width="300" height="146" alt="Фото каталога веб-сайтов">
         <p>Веб-сайты</p>
-        <b class="product-text">Мир никогда не будет прежним после того как увидит ваш сайт!</b><br>
+        <p class="product-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
         <button class="btn button1">Заказать</button>
       </li>
 
       <li class="service-item">
         <img class="applications" src="img/product-2.jpg" width="300" height="146" alt="Фото каталога приложений">
         <p>Приложения</p>
-        <b class="product-text">Покоритe топ-10 приложений в AppStore и Google Play</b><br>
+        <p class="product-text">Покоритe топ-10 приложений в AppStore и Google Play</p>
         <button class=" btn button2">Заказать</button>
       </li>
 
       <li class="service-item">
         <img class="presentation" src="img/product-3.jpg" width="300" height="146" alt="Фото каталога презентаций">
         <p>Презентации</p>
-        <b class="product-text">Вы даже не подозреваете<br> насколько вы изумительны!</b><br>
+        <p class="product-text">Вы даже не подозреваете<br> насколько вы изумительны!</p>
         <button class="btn button3">Заказать</button>
       </li>
     </ul>
@@ -90,7 +90,7 @@
 </section>
 <!--Main section[END]-->
 <!--section info-->
-<hr class="line1">
+<div class="line1"></div>
 <section class="section info">
   <div class="container">
     <div class="inner-columns">
@@ -100,27 +100,27 @@
               превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p class="column-left-text"><strong>Выполняем заказы на разработку:</strong></p>
         <div class="infocontainer2">
-              <p class="nerds-info">Веб-сайтов любой сложности</p><br>
-              <p class="nerds-info">Мобильных приложений для iOS и Android</p><br>
-            <p class="nerds-info">Слайдшоу и видео для корпоративных презентаций</p>
+          <p class="nerds-info">Веб-сайтов любой сложности</p><br>
+          <p class="nerds-info">Мобильных приложений для iOS и Android</p><br>
+          <p class="nerds-info">Слайдшоу и видео для корпоративных презентаций</p>
         </div>
       </div>
       <div class="inner-column-right">
-          <img class="nerds-illustration" src="img/nerds-illustration.png" width="360" height="208" alt="Логотип">
-          <p class="right-info">с 2004 года Любим точность во всем:</p>
-          <div class="infocontainer">
-            <p class="right-info-column"><strong>146</strong><b>%</b></p>
-            <span>Уровень<br>самоотдачи</span>
-            <p class="right-info-column"><strong>100</strong><b>%</b></p>
-            <span>Соблюдение<br>сроков</span>
-            <p class="right-info-column"><strong>50</strong><b>%</b></p>
-            <span>Минимальная<br>предоплата</span>
-          </div>
+        <img class="nerds-illustration" src="img/nerds-illustration.png" width="360" height="208" alt="Логотип">
+        <p class="right-info">с 2004 года Любим точность во всем:</p>
+        <div class="infocontainer">
+          <p class="right-info-column"><strong>146</strong><b>%</b>
+          <span>Уровень<br>самоотдачи</span></p>
+          <p class="right-info-column"><strong>100</strong><b>%</b>
+          <span>Соблюдение<br>сроков</span></p>
+          <p class="right-info-column"><strong>50</strong><b class="last-teg-b">%</b>
+          <span>Минимальная<br>предоплата</span></p>
+      </div>
       </div>
     </div>
   </div>
 </section>
-  <hr class="line2">
+  <div class="line2"></div>
 <!--section info[END]-->
 <!--section logo-->
 <section class="section logo">
@@ -141,22 +141,18 @@
     </div>
   </div>
 </section>
-  <hr class="line3">
+  <div class="line3"></div>
 <!--section Logo[END]-->
 <!--section map-->
 <section class="section map">
   <div class="inner-map">
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1680.604198725929!2d30.322114579016308!3d59.93900380463333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1551382256254"
-      width="2000" height="416" style="border:0" allowfullscreen></iframe>
-
-
+    <iframe class="maps"src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1680.604198725929!2d30.322114579016308!3d59.93900380463333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1551382256254"
+    width="1440" height="416" style="border:0" allowfullscreen></iframe>
     <img class="marker" src="img/map-marker-png.png" width="231" height="190" alt="">
     <div class="modal-map">
       <p class="info-nerds-modal"><strong>NЁRDS DESIGN STUDIO</strong></p>
       <address class="addr">191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8<br>
-
+        ул. Б. Конюшенная, д. 19/8<br>
         <p class="tel">тел. +7 (812) 275-75-75</p>
       </address>
       <button class="write btn">Напишите нам</button>
@@ -246,6 +242,6 @@
   </div>
 </footer>
 <!--Footer[END]-->
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>
