@@ -683,7 +683,7 @@ p.product-text{
   border-radius: 5px;
   text-align: center;
   color: #ffffff;
-
+  outline: none;
   text-transform: uppercase;
   background-color: #fb565a;
   border: none;
