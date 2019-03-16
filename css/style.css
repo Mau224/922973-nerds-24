@@ -1009,7 +1009,9 @@ b.discount{
   justify-content: flex-end;
   align-items: baseline;
   flex-wrap: wrap;
-  height:10px;
+  width: 620px;
+  height:40px;
+  overflow: auto;
   margin-left:auto;
 }
 .fix-up{
@@ -1019,6 +1021,9 @@ b.discount{
   margin-top: -19px;
   margin-bottom: 60px;
   height: 20px;
+}
+.first{
+  margin-left: 26px;
 }
 .sort-item{
   margin-left:26px;
